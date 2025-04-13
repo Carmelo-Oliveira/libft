@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/13 17:03:41 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/13 17:06:51 by carmoliv         ###   ########.fr       */
+/*   Created: 2025/04/13 12:20:13 by carmoliv          #+#    #+#             */
+/*   Updated: 2025/04/13 15:22:28 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-size_t	ft_strlen(const char *str)
+void	ft_bzero(void *s, size_t len)
 {
-	int	i;
+	unsigned char	*n;
+	size_t			i;
 
 	i = 0;
-	while (str[i])
+	n = (unsigned char *)s;
+	while (i < len)
+	{
+		n[i] = 0;
 		i++;
-	return (i);
+	}
 }
-/* #include <stdio.h>
-int	main()
+/*#include <stdio.h>
+int	main(void)
 {
-	char	name[] = "Carmelo";
-	int	result;
-
-	result = ft_strlen(name);
-	printf("%d\n", result);
-	return (0);
-} */
+	char	name[] = "Carmelo Oliveira";
+	ft_bzero(name, 7);
+	printf("%s \n",name);
+}*/
