@@ -19,6 +19,8 @@ void	ft_bzero(void *s, size_t len);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	*ft_memchr(const void *ptr, int value, size_t num);
 
 
 
