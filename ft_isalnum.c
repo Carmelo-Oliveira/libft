@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:22:58 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/13 15:28:02 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/04/15 19:26:35 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	ft_isalnum(int c)
 		return (c);
 	return (0);
 }
+
 /*int main(void)
 {
 	ft_isalnum();
