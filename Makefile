@@ -10,20 +10,24 @@ SCRS =	ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 
 OBJS = $(SCRS:.c=.o)
 
-all: $(NAME)
+MAIN_SRC = ft_strnstr.c
+EXEC = a.out
+
+all: $(NAME) $(EXEC)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-run:
-	./a.out
+$(EXEC): $(MAIN_SRC)
+	$(CC) $(CFLAGS) $< -o $(EXEC)
+
+run: $(EXEC)
+	./$(EXEC)
 
 clean:
 	rm -rf $(OBJS)
 
 fclean: clean
-	rm -rf $(NAME) ./a.out
+	rm -rf $(NAME) $(EXEC)
 
 re: fclean all
-	
-

@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 20:29:02 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/15 20:54:57 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/04/15 21:16:17 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 int	main()
 {
 	char	stack[] = "Hello";
-	char	need[] = "lo";
+	char	need[] = "ca";
 	int	i = 6;
 	
 	char *result = ft_strnstr(stack, need, i);
