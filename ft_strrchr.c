@@ -28,7 +28,7 @@ char	*ft_strrchr(const char *str, int c)
 	return ((char *)last);
 }
 /* #include <stdio.h>
-int	main()
+int	main(void)
 {
 	const char	name[] = "Carmelo oliveira";
 	int	c = 97;

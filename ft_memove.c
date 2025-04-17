@@ -40,10 +40,10 @@ void	*ft_memove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/* 
+/*
 #include <stdio.h>
 
-int	main()
+int	main(void)
 {
 	char	dest[40] = "carmelo";
 	char	src[] = "Oliveira";

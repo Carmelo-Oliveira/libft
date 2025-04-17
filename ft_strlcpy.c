@@ -41,12 +41,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 }
 /* #include <stdio.h>
 
-int	main()
+int	main(void)
 {
 char	name [20] = "Carmelo";
 char	name2 [] = "Oliveira";
-size_t i = 4;
-size_t result;
+size_t	i = 4;
+size_t	result;
 
 result = ft_strlcpy(name, name2, i);
 printf("%zu\n", result);

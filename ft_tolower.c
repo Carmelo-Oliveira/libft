@@ -19,7 +19,7 @@ int	ft_tolower(int c)
 	return (c);
 }
 /* #include <stdio.h>
-int	main()
+int	main(void)
 {
 	int	i = 65;
 	int result = ft_tolower(i);

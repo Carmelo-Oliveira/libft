@@ -27,7 +27,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 }
 /* #include <stdio.h>
 
-int		main()
+int	main(void)
 {
 	char	s1[] = "Carmlo";
 	char	s2[] = "Carmelo";
@@ -41,6 +41,6 @@ int		main()
 		printf("Value %d, S1 e S2 are the same.\n", result);
 	else
 		printf("Value %d, S1 is lass than S2.\n", result);
-	
+
 	return (0);
 } */

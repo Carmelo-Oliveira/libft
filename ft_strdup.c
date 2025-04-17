@@ -1,36 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/17 22:16:28 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/17 22:39:29 by carmoliv         ###   ########.fr       */
+/*   Created: 2025/04/17 23:12:56 by carmoliv          #+#    #+#             */
+/*   Updated: 2025/04/17 23:52:47 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+char	*ft_strdup(const char *s)
 {
-	int	*ptr;
+	char	*ptr;
 
-	ptr = (int *)malloc(count * size);
-	if (!ptr)
+	if(!(ptr = (char *)malloc(ft_strlen(s) + 1)))
 		return (0);
-	ft_bzero(ptr, count*size);
-	return (ptr);
+	ft_strlcpy(ptr, s, ft_strlen(s) + 1);
+	
+	return(ptr);
 }
-/* int	main()
-{
-	char *i;
-
-	i = (char *)ft_calloc(10, sizeof(int));
-	int j = 0;
-	while(j < 40)
-	{
-		printf("%d - %d \n",i[j], j);
-		j++;
-	}
-} */
