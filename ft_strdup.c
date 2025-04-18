@@ -15,10 +15,31 @@
 char	*ft_strdup(const char *s)
 {
 	char	*ptr;
+	size_t	len;
 
-	if(!(ptr = (char *)malloc(ft_strlen(s) + 1)))
-		return (0);
-	ft_strlcpy(ptr, s, ft_strlen(s) + 1);
-	
+	len = ft_strlen(s);
+	ptr = malloc(len + 1);
+	if (!ptr)
+		return (NULL);
+	ft_strlcpy(ptr, s, len + 1);
 	return(ptr);
 }
+/*int	main()
+{
+	const char *original = "Carmelo";
+	char *copy;
+
+	copy = ft_strdup(original);
+	if (copy)
+	{
+		printf("String original: %s\n",original);
+		printf("String copy: %s\n", copy);
+		copy[0] = 'X';
+		printf("String modified: %s\n", copy);
+		printf("String original: %s\n", original);
+		free(copy);
+	}
+	else
+		printf("Error function.");
+	return (0);
+}*/

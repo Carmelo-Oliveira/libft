@@ -16,24 +16,28 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 {
 	int			i;
 	char	*dest;
-	unsigned int	result;
+	size_t	len_s;
 
-	result = len - start;	
+	len_s = ft_strlen(s);
 	i = 0;
-	if (len == 0 || !s)
-		result = 1;
-	if(!(dest = (char *)malloc(result)))
+	if (!s || *s == '\0')
 		return (NULL);
-	while (start <= len)
+	if (start >= len_s)
+		return (ft_strdup(""));
+	if (len > len_s - start)
+		len = len_s - start;
+	if(!(dest = (char *)malloc(len + 1)))
+		return (NULL);
+	while (i < len && s[start + i])
 	{
-		dest[i] = s[start];
+		dest[i] = s[start + i];
 		i++;
-		start++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }
-/* int main()
+/*int main()
 {
 	//printf("%s", ft_substr("Carmelo", 2, ft_strlen("carmelo")));
 	printf("%s", ft_substr("", 0, 0));
-} */
+}*/

@@ -7,10 +7,11 @@ SCRS =	ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 		ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c \
 		ft_strncmp.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_memcmp.c \
 		ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
+		ft_strjoin.c \
 
 OBJS = $(SCRS:.c=.o)
 
-MAIN_SRC = ft_strnstr.c
+MAIN_SRC = ft_strlcpy.c
 EXEC = a.out
 
 all: $(NAME) $(EXEC)
