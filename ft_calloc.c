@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 22:16:28 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/17 22:39:29 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/04/21 22:10:56 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t count, size_t size)
 	ptr = (int *)malloc(count * size);
 	if (!ptr)
 		return (0);
-	ft_bzero(ptr, count*size);
+	ft_bzero(ptr, count * size);
 	return (ptr);
 }
 /* int	main()

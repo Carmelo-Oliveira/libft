@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 23:12:56 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/17 23:52:47 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/04/21 22:02:46 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s)
 	if (!ptr)
 		return (NULL);
 	ft_strlcpy(ptr, s, len + 1);
-	return(ptr);
+	return (ptr);
 }
 /*int	main()
 {

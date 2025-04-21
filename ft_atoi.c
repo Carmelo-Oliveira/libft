@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 21:00:20 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/17 22:15:34 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/04/21 22:11:18 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	ft_atoi(const char *str)
 	{
 		return (0);
 	}
-	
 	while ((str[i] == 32) || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	if (str[i] == '-' || str[i] == '+')

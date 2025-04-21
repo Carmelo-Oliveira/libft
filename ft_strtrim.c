@@ -1,48 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/21 22:07:43 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/21 22:10:18 by carmoliv         ###   ########.fr       */
+/*   Created: 2025/04/21 19:24:29 by carmoliv          #+#    #+#             */
+/*   Updated: 2025/04/21 20:44:05 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strtrim(char const *s1, char const *set)
 {
+	size_t	start;
+	size_t	end;
 	char	*dest;
-	size_t	i;
-	size_t	j;
 
-	i = 0;
-	j = 0;
-	if (!s1 || !s2)
+	if (!s1)
 		return (NULL);
-	dest = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	start = 0;
+	end = ft_strlen(s1);
+	while (s1[start] && ft_strchr(set, s1[start]))
+		start++;
+	while (end > start && ft_strchr(set, s1[end - 1]))
+		end--;
+	dest = ft_substr(s1, start, end - start);
 	if (!dest)
 		return (NULL);
-	while (i < ft_strlen(s1))
-	{
-		dest[i] = s1[i];
-		i++;
-	}
-	while (j < ft_strlen(s1) + 1)
-	{
-		dest[i + j] = s2[j];
-		j++;
-	}
-	dest [i + j] = '\0';
 	return (dest);
 }
-/* int main()
+/* int main(void)
 {
-    char    *name = "Carmelo";
-    char    *name2 = "Oliveira";
-    char    *result;
+	char	*s1 = "  !:.Car:melo.:!  ";
+	char	*set = " !:";
 
-    printf("String together: %s\n", result = ft_strjoin(name, name2));
+	printf("String trimmed:%s", ft_strtrim(s1, set));
+	return(0);
 } */
