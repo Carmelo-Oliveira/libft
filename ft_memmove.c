@@ -1,32 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/10 22:07:04 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/26 13:57:24 by carmoliv         ###   ########.fr       */
+/*   Created: 2025/04/13 15:48:25 by carmoliv          #+#    #+#             */
+/*   Updated: 2025/04/26 14:15:32 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t				i;
 	unsigned char		*d;
 	const unsigned char	*s;
 
 	if (!dest && !src)
-		return (0);
+		return (NULL);
+	i = 0;
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
-	i = 0;
-	while (i < n)
+	if (d > s && d < s + n)
 	{
-		d[i] = s[i];
-		i++;
+		i = n;
+		while (i-- > 0)
+			d[i] = s[i];
+	}
+	else
+	{
+		i = 0;
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
 	return (dest);
 }
@@ -34,11 +44,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 int	main(void)
 {
-	char	name1[40] = "";
-	char	name2[] = "Oliveira";
-	size_t value = 3;
+	char	dest[40] = "";
+	char	src[] = "Oliveira";
+	size_t i = 4;
 
-	ft_memcpy(name1, name2, value);
-	printf("%s \n", name1);
+	ft_memove(dest + 2, src, i);
+	printf("%s \n", dest);
 	return (0);
 } */

@@ -1,36 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/17 22:16:28 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/26 13:57:00 by carmoliv         ###   ########.fr       */
+/*   Created: 2025/04/29 17:59:31 by carmoliv          #+#    #+#             */
+/*   Updated: 2025/04/29 20:26:00 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int	*ptr;
-
-	ptr = (int *)malloc(count * size);
-	if (!ptr)
-		return (0);
-	ft_bzero(ptr, count * size);
-	return (ptr);
+	if (lst == NULL || new == NULL)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
 /* int	main()
 {
-	char *i;
-
-	i = (char *)ft_calloc(10, sizeof(int));
-	int j = 0;
-	while(j < 40)
+	t_list	*test;
+	
+	int	value = 12;
+	test = ft_lstnew(&value);
+	for (int j = 0; j < 10; j++)
 	{
-		printf("%d - %d \n",i[j], j);
-		j++;
+		t_list *new;
+
+		new = ft_lstnew(&j);
+		ft_lstadd_front(&test, new);
+	}
+
+	t_list *tmp = test;
+	while (tmp != NULL)
+	{
+		printf("Value: %d\n", *(int *)(tmp->content));
+		tmp = tmp->next;
 	}
 } */

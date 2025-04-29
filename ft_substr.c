@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 23:52:56 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/21 22:12:10 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/04/26 13:30:17 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	len_s = ft_strlen(s);
 	i = 0;
 	if (!s || *s == '\0')
-		return (NULL);
+		return (ft_strdup(""));
 	if (start >= len_s)
 		return (ft_strdup(""));
 	if (len > len_s - start)
@@ -37,8 +37,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dest[i] = '\0';
 	return (dest);
 }
-/*int main()
+/* int main()
 {
 	//printf("%s", ft_substr("Carmelo", 2, ft_strlen("carmelo")));
 	printf("%s", ft_substr("", 0, 0));
-}*/
+} */

@@ -3,7 +3,7 @@ NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 SCRS =	ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
-		ft_isdigit.c ft_isprint.c ft_memchr.c ft_memcpy.c ft_memove.c \
+		ft_isdigit.c ft_isprint.c ft_memchr.c ft_memcpy.c ft_memmove.c \
 		ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c \
 		ft_strncmp.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_memcmp.c \
 		ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
@@ -11,25 +11,27 @@ SCRS =	ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 		ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 
-OBJS = $(SCRS:.c=.o)
+BSCRS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
 
-MAIN_SRC = ft_putnbr_fd.c
+OBJS = $(SCRS:.c=.o)
+BOBJS = $(BSCRS:.c=.o)
+
+MAIN_SRC = ft_lstadd_back.c
 EXEC = a.out
 
-all: $(NAME) $(EXEC)
-
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
-
 $(EXEC): $(MAIN_SRC) $(NAME)
-	$(CC) $(CFLAGS) $(MAIN_SRC) libft.a -o $(EXEC)
+	$(CC) $(CFLAGS) $(MAIN_SRC) $(NAME) -o $(EXEC)
 
+$(NAME): $(OBJS) $(BOBJS)
+	ar rcs $(NAME) $(OBJS) $(BOBJS)
+
+all: $(NAME) $(EXEC)
 
 run: $(EXEC)
 	./$(EXEC)
 
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(OBJS) $(BOBJS)
 
 fclean: clean
 	rm -rf $(NAME) $(EXEC)

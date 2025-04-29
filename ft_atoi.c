@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 21:00:20 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/21 22:11:18 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/04/26 14:04:44 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,6 @@ int	ft_atoi(const char *str)
 	signal = 1;
 	result = 0;
 	i = 0;
-	if (!str)
-	{
-		return (0);
-	}
 	while ((str[i] == 32) || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
@@ -42,8 +38,7 @@ int	ft_atoi(const char *str)
 }
 /* int	main(void)
 {
-	char	value[] = "";
+	char	value[40] = "+123";
 
-	printf("%d \n ",ft_atoi(value));
-	return (0);
+	printf("%d\n",ft_atoi(value));
 } */
