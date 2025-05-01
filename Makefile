@@ -12,22 +12,22 @@ SCRS =	ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 		ft_putnbr_fd.c \
 
 BSCRS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c\
+		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
 
 OBJS = $(SCRS:.c=.o)
 BOBJS = $(BSCRS:.c=.o)
-
-MAIN_SRC = ft_lstmap.c
-EXEC = a.out
+AR = ar rcs 
+#MAIN_SRC = ft_lstmap.c
+#EXEC = a.out
 
 $(EXEC): $(MAIN_SRC) $(NAME)
 	$(CC) $(CFLAGS) $(MAIN_SRC) $(NAME) -o $(EXEC)
 
 $(NAME): $(OBJS) $(BOBJS)
-	ar rcs $(NAME) $(OBJS) $(BOBJS)
+	$(AR) $(NAME) $(OBJS) $(BOBJS)
 
 all: $(NAME) $(EXEC)
-
+bonus: $(NAME)
 run: $(EXEC)
 	./$(EXEC)
 

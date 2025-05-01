@@ -6,19 +6,19 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:28:50 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/29 19:53:04 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/01 17:27:04 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (NULL);
 	while (lst->next != NULL)
 		lst = lst->next;
-	return (lst);	
+	return (lst);
 }
 /* int	main()
 {

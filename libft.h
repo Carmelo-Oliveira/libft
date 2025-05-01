@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 21:53:35 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/29 19:56:45 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/01 17:27:28 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-	
 }					t_list;
 
 int				ft_isalpha(int c);
@@ -70,6 +69,6 @@ void			ft_lstdelone(t_list *lst, void (*del)(void*));
 void			ft_lstclear(t_list **lst, void (*del)(void*));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
-						void (*del)(void *));
+					void (*del)(void *));
 
 #endif

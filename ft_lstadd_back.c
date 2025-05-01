@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:57:33 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/29 20:57:52 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/01 17:20:32 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *last;
+	t_list	*last;
+
 	if (!lst || !new)
 		return ;
 	if (*lst == NULL)

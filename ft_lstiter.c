@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/01 17:25:52 by carmoliv          #+#    #+#             */
+/*   Updated: 2025/05/01 17:26:10 by carmoliv         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    while (lst)
-    {
-        f(lst->content);
-        lst = lst->next;
-    }
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
 /*
 void    print_lst(void *content)

@@ -6,13 +6,13 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:17:45 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/29 17:48:38 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/01 17:24:45 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list			*ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*cont;
 
@@ -21,7 +21,6 @@ t_list			*ft_lstnew(void *content)
 		return (NULL);
 	cont->content = content;
 	cont->next = NULL;
-
 	return (cont);
 }
 /*int	main(void)
