@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:41:35 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/15 20:28:36 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/03 18:25:46 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Function compare byte a byte memory regions
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t			i;

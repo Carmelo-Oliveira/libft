@@ -6,12 +6,13 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 21:00:20 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/26 14:04:44 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/03 16:36:38 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*Receive a number of the type string and return
+a value of the interger*/
 int	ft_atoi(const char *str)
 {
 	int	i;

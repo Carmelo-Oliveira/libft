@@ -6,13 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 12:20:13 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/13 15:22:28 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/03 16:50:11 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
-
+//Function to reset a memory block byte by byte.
 void	ft_bzero(void *s, size_t len)
 {
 	unsigned char	*n;
@@ -26,10 +25,10 @@ void	ft_bzero(void *s, size_t len)
 		i++;
 	}
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 int	main(void)
 {
-	char	name[] = "Carmelo Oliveira";
-	ft_bzero(name, 7);
+	char	name[] = "Carmoliv";
+	ft_bzero(name, 8);
 	printf("%s \n",name);
-}*/
+} */

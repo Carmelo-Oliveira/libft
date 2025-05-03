@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 22:13:39 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/21 23:02:38 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/03 18:12:02 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Function to convert a number interger in a string
 static	size_t	n_len(int n)
 {
 	size_t	len;
@@ -60,5 +60,6 @@ char	*ft_itoa(int n)
 
 	result = ft_itoa(number);
 	printf("%s",result);
+	free(result);
 	return (0);
 } */

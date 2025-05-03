@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:28:24 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/13 15:30:22 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/03 17:13:51 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Function to check if it is a alphabetical
 int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
