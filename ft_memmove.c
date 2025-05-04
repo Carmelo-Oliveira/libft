@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//Copies data and avoids overwriting
+//Move data and avoids overwriting
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t				i;
@@ -40,7 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/* #include <stdio.h>
+/*#include <stdio.h>
 
 int	main(void)
 {
@@ -51,4 +51,4 @@ int	main(void)
 	ft_memmove(dest + 2, src, i);
 	printf("%s \n", dest);
 	return (0);
-} */
+}*/

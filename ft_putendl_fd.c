@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//writes a string followed bye a line break
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)
@@ -19,8 +19,8 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
-/* int	main()
+/*int	main()
 {
 	char	*s = "Carmelo";
 	ft_putendl_fd(s, 1);
-} */
+}*/

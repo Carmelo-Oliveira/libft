@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Function writes an integer to the desired output.
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	x;
@@ -28,7 +28,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_putchar_fd(x % 10 + '0', fd);
 }
-/* int	main(void)
+/*int	main(void)
 {
 	ft_putnbr_fd(0, 1);
 	write(1, "\n", 1);
@@ -39,4 +39,4 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putnbr_fd(-987441, 1);
 	write(1, "\n", 1);
 	ft_putnbr_fd(-2147483648LL, 1);
-} */
+}*/

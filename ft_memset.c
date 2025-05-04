@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Fill a block of memory with a value specific
 void	*ft_memset(void *ptr, int value, size_t num)
 {
 	size_t			i;
@@ -26,11 +26,11 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (ptr);
 }
-/*
-//#include <stdio.h>
+/*#include <stdio.h>
 int	main(void)
 {
-	char	nome[40] = "Carmelo";
-	printf("%s \n",ft_memset(nome, 'i', 40));
+	char	name[40] = "Carmelo";
+	ft_memset(name, 'i', 2);
+	printf("%s \n", name);
 	return (0);
 }*/

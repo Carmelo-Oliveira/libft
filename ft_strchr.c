@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Search the first occurrence of character ane return an pointer
 char	*ft_strchr(const char *str, int c)
 {
 	int	i;
@@ -27,20 +27,19 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)&str[i]);
 	return (NULL);
 }
-/* #include <stdio.h>
+/*#include <stdio.h>
 
 int	main(void)
 {
 	char	name[] = "Carmelo";
-	int	value = 97;
+	int	value = 114;
 	char *result;
 
 	result = ft_strchr(name, value);
 	if (result != NULL)
-		printf("O caractere '%c' foi encontrado
-			na posição: %ld\n", value, result - name);
+		printf("O caractere '%c' foi encontrado a posição: %ld\n", value, result - name);
 	else
 		printf("Caractere não encontrado.\n");
 
 	return (0);
-} */
+}*/

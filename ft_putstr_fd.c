@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Write a string full character by character
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
