@@ -6,12 +6,13 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 20:49:46 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/22 21:24:58 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:27:33 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Creates a new string where each char is 
+//changed bye the function passed as a parameter
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*new_dest;

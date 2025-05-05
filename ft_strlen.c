@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:03:41 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/15 18:28:28 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 21:41:54 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Function count number of char
 size_t	ft_strlen(const char *str)
 {
 	int	i;

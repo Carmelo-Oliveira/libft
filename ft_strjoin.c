@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 22:07:43 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/26 12:49:01 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 21:17:36 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Returns the two concatenated strings
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*dest;

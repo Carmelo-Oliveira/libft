@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 14:16:11 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/13 15:09:22 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:29:22 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ int	main(void)
 
 	result = ft_strchr(name, value);
 	if (result != NULL)
-		printf("O caractere '%c' foi encontrado a posição: %ld\n", value, result - name);
+		printf("O caractere '%c' foi encontrado a posição:
+					 %ld\n", value, result - name);
 	else
 		printf("Caractere não encontrado.\n");
 

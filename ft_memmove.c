@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 15:48:25 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/03 18:51:36 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:38:29 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char		*d_dest;
 	const unsigned char	*s_src;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	i = 0;
 	d_dest = (unsigned char *)dest;

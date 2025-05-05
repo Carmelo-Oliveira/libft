@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 20:51:21 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/21 22:02:18 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 21:15:58 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Returns a set of words defined by the delimiter
 static int	c_word(char const *s, char c)
 {
 	size_t	word;

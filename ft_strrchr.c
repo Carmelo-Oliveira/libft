@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:19:27 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/13 17:55:45 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:28:52 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Returns a pointer to last occurrence.
 char	*ft_strrchr(const char *str, int c)
 {
 	const char	*last;

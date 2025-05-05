@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 23:12:56 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/21 22:02:46 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 20:58:07 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Creates a new string in the heap with the content passed as a parameter
 char	*ft_strdup(const char *s)
 {
 	char	*ptr;

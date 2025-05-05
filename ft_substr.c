@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 23:52:56 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/26 13:30:17 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:26:43 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Returns a sub-string of the content "S"
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
@@ -39,6 +39,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 /* int main()
 {
-	//printf("%s", ft_substr("Carmelo", 2, ft_strlen("carmelo")));
+	//printf("%s", ft_substr("Carmoliv", 2, ft_strlen("Carmoliv")));
 	printf("%s", ft_substr("", 0, 0));
 } */

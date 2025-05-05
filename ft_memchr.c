@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:27:01 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/03 18:20:05 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:49:37 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memchr(const void *ptr, int value, size_t num)
 
 	p = ptr;
 	i = 0;
-	if (!ptr)
-		return (NULL);
 	while (i < num)
 	{
 		if (p[i] == (unsigned char)value)

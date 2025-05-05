@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 16:29:34 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/13 17:03:29 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 21:41:23 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//The function copies src to dest respecting the value passed bye dstsize -1
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

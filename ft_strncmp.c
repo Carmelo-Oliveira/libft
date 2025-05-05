@@ -6,12 +6,14 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:36:08 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/15 19:36:51 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:28:30 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Compares the two strings and returns 
+//positive if s1 is greater,
+//negative if s1 is less and 0 if they are equal.
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

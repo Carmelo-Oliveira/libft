@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 19:24:29 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/04/29 19:18:00 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:14:17 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Remove the characters of the begin and of the end.
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;

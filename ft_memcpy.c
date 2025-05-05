@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 22:07:04 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/03 18:32:23 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/05 22:37:12 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*d_dest;
 	const unsigned char	*s_src;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (0);
 	d_dest = (unsigned char *)dest;
 	s_src = (const unsigned char *)src;
