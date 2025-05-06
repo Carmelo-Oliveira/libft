@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:57:33 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/01 17:20:32 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/06 20:40:39 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Add one new node in final of list
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
@@ -23,11 +23,13 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	last = ft_lstlast(*lst);
-	last->next = new;
+	else
+	{
+		last = ft_lstlast(*lst);
+		last->next = new;
+	}
 }
-
-/* int main ()
+/*int main ()
 {
 	t_list *test = NULL;
 	int	value = 12;
@@ -59,4 +61,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		free(test->content);
 		free(test);
 		test = tmp;
-	} */
+	}
+}*/

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 17:27:39 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/01 17:29:36 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/06 20:57:12 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//function deletes all nodes from the list
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:17:45 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/01 17:24:45 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/06 21:08:00 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Creates and initializes a new node
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*cont;

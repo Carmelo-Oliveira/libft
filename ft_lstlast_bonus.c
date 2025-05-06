@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:28:50 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/01 17:27:04 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/06 21:04:57 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Function return the last node of the list
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

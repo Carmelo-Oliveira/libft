@@ -6,12 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:04:01 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/03 16:18:31 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/06 21:08:49 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Returns the size of the list
 int	ft_lstsize(t_list *lst)
 {
 	int	i;
