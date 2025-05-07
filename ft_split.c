@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 20:51:21 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/06 22:28:14 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/07 20:49:12 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,30 @@ static int	c_word(char const *s, char c)
 	return (count);
 }
 
+static size_t	word_len(const char *s, char c)
+{
+	char	*end;
+
+	end = ft_strchr(s, c);
+	if (end)
+		return (end - s);
+	else
+		return (ft_strlen(s));
+}
+
+static int	sub_free(char **arr, int i, const char *s, size_t len)
+{
+	arr[i] = ft_substr(s, 0, len);
+	if (!arr[i])
+	{
+		while (i--)
+			free(arr[i]);
+		free(arr);
+		return (0);
+	}
+	return (1);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
@@ -49,15 +73,14 @@ char	**ft_split(char const *s, char c)
 			s++;
 		if (*s)
 		{
-			if (!ft_strchr(s, c))
-				len = ft_strlen(s);
-			else
-				len = ft_strchr(s, c) - s;
-			arr[i++] = ft_substr(s, 0, len);
+			len = word_len(s, c);
+			if (!sub_free(arr, i, s, len))
+				return (NULL);
+			i++;
 			s += len;
 		}
 	}
-	arr[i] = '\0';
+	arr[i] = NULL;
 	return (arr);
 }
 /* int	main(void)

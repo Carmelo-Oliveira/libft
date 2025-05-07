@@ -6,16 +6,16 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 13:08:55 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/05 21:34:22 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/07 21:36:39 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //Concatenates the src string to dest respecting the value passed in size
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+size_t	ft_strlcat(char *dest, char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	j;
+	size_t	i;
+	size_t	j;
 
 	j = 0;
 	i = ft_strlen(dest);

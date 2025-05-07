@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 22:16:28 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/03 17:01:40 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/07 21:07:41 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,12 @@
 //Function to alocation block memory with zero using malloc.
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*ptr;
+	void		*ptr;
+	size_t		max;
 
+	max = count * size;
+	if (size && ((max / size) != count))
+		return (NULL);
 	ptr = (int *)malloc(count * size);
 	if (!ptr)
 		return (0);

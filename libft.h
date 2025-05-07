@@ -6,13 +6,12 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 21:53:35 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/03 16:18:23 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/07 21:49:08 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -35,7 +34,7 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 void			ft_bzero(void *s, size_t len);
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+size_t			ft_strlcat(char *dest, char *src, size_t size);
 char			*ft_strchr(const char *str, int c);
 char			*ft_strrchr(const char *str, int c);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);

@@ -18,7 +18,7 @@ BSCRS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 OBJS = $(SCRS:.c=.o)
 BOBJS = $(BSCRS:.c=.o)
 AR = ar rcs 
-#MAIN_SRC = ft_lstadd_back_bonus.c
+#MAIN_SRC = ft_strlcat.c
 #EXEC = a.out
 
 $(EXEC): $(MAIN_SRC) $(NAME)

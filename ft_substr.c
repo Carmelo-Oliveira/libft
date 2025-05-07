@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 23:52:56 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/05 22:26:43 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/07 19:42:04 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*dest;
 	size_t	len_s;
 
+	if (!s)
+		return (0);
 	len_s = ft_strlen(s);
 	i = 0;
-	if (!s || *s == '\0')
-		return (ft_strdup(""));
 	if (start >= len_s)
 		return (ft_strdup(""));
 	if (len > len_s - start)
